@@ -4,8 +4,8 @@ from aiogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, C
 from aiogram.filters import Command
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 
-BOT_TOKEN = "7349205212:AAF-pvCL_gw74yqg6ZEvTJiuEHlBd0j87TU"
-ACCUWEATHER_API_KEY = "E3WJYpzMKzxNBlk0UJRxpd72L2DVJV24"
+BOT_TOKEN = " "
+ACCUWEATHER_API_KEY = " "
 ACCUWEATHER_BASE_URL = "http://dataservice.accuweather.com"
 
 bot = Bot(token=BOT_TOKEN)
