@@ -4,8 +4,8 @@ from aiogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, C
 from aiogram.filters import Command
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 
-BOT_TOKEN = " "
-ACCUWEATHER_API_KEY = " "
+BOT_TOKEN = "7349205212:AAF-pvCL_gw74yqg6ZEvTJiuEHlBd0j87TU"
+ACCUWEATHER_API_KEY = "E3WJYpzMKzxNBlk0UJRxpd72L2DVJV24"
 ACCUWEATHER_BASE_URL = "http://dataservice.accuweather.com"
 
 bot = Bot(token=BOT_TOKEN)
@@ -83,7 +83,7 @@ async def handle_interval_selection(callback: CallbackQuery):
     interval = 1 if "interval_1" in callback.data else 5
     user_state[callback.from_user.id]["interval"] = interval
     await callback.message.answer(
-        f"Вы выбрали прогноз на {interval} день{'а' if interval == 1 else 'ей'}.\n"
+        f"Вы выбрали прогноз на {interval} день\n"
         "Теперь введите начальный город вашего маршрута."
     )
 
